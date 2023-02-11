@@ -22,7 +22,11 @@ img {
     width: 70%;
 }
 
-.carousel_main .carousel_left_side .carousel_left_side_text {
+.carousel_main .carousel_left_side_slide {
+    height: 100%;
+}
+
+.carousel_main .carousel_left_side_slide .carousel_left_side_text {
     position: absolute;
     bottom: 0;
     color: white;

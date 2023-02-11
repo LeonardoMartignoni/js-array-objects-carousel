@@ -45,3 +45,23 @@ const images = [
         text: "Marvel's Avengers is an epic, third-person, action-adventure game that combines an original, cinematic story with single-player and co-operative gameplay.",
     },
 ];
+
+// Prendo gli elementi dove inserire i componenti del carosello
+const thumbsContainer = document.getElementById("carousel-thumbs");
+const slideElements = document.getElementById('carousel_slide_content');
+
+images.forEach((image, index) => {
+    thumbsContainer.innerHTML +=
+    `<div class="carousel_right_thumb">
+		<img src="./${image.image}">
+	</div>`;
+
+    slideElements.innerHTML +=
+    `<div class="carousel_left_side_slide" data-index="${index}">
+		<img src="./${image.image}">
+		<div class="carousel_left_side_text">
+			<h3>${image.title}</h3>
+			<p>${image.text}</p>
+		</div>
+	</div>`
+});
