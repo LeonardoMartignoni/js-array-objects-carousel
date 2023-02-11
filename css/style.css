@@ -4,11 +4,6 @@ img {
     object-fit: cover;
 }
 
-.dbg {
-    border: 1px dashed black;
-    height: 100%;
-}
-
 .carousel_container {
     height: 100vh;
     display: flex;
