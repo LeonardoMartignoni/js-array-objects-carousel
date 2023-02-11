@@ -23,6 +23,7 @@ img {
 }
 
 .carousel_main .carousel_left_side_slide {
+    display: none;
     height: 100%;
 }
 
@@ -64,4 +65,8 @@ img {
     padding: 0 10px;
     border: none;
     color: inherit;
+}
+
+.carousel_left_side_slide.active {
+    display: block;
 }

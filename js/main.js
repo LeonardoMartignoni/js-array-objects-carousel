@@ -50,6 +50,9 @@ const images = [
 const thumbsContainer = document.getElementById("carousel-thumbs");
 const slideElements = document.getElementById('carousel_slide_content');
 
+// Dichiaro l'immagine attiva
+let activeImage = 0;
+
 images.forEach((image, index) => {
     thumbsContainer.innerHTML +=
     `<div class="carousel_right_thumb">
@@ -57,7 +60,7 @@ images.forEach((image, index) => {
 	</div>`;
 
     slideElements.innerHTML +=
-    `<div class="carousel_left_side_slide" data-index="${index}">
+    `<div class="carousel_left_side_slide ${index == activeImage ? 'active' : ''}" data-index="${index}">
 		<img src="./${image.image}">
 		<div class="carousel_left_side_text">
 			<h3>${image.title}</h3>
